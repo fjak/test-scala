@@ -1,0 +1,10 @@
+package bar
+
+import foo.Baz
+
+extend sugar.Syntax
+
+object Main extends App {
+	val baz = new Baz(3);
+	println(baz)
+}
