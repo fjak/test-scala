@@ -2,7 +2,7 @@ package bar
 
 import foo.Baz
 
-extend sugar.Syntax
+import sugar.Syntax
 
 object Main extends App {
 	val baz = new Baz(3);
