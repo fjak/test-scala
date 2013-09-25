@@ -1,0 +1,11 @@
+package concretesyntax
+
+import org.sugarj.languages.Scala
+import org.sugarj.languages.Stratego
+
+import concretesyntax.MetaExplode
+
+sugar Scala {
+	context-free syntax
+		"|[" ScalaNoLExpr "]|" -> StrategoTerm {cons("ToMetaExpr")}
+}

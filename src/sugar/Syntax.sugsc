@@ -1,9 +1,0 @@
-package sugar
-
-import org.sugarj.languages.Scala
-
-sugar Syntax {
-	context-free syntax
-		"<xml />" -> ScalaLiteral {"XmlExpr"}
-}
-

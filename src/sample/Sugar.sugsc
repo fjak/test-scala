@@ -1,0 +1,15 @@
+package sample
+
+import concretesyntax.Scala
+
+sugar Sugar {
+	context-free syntax
+		",foo," -> ScalaNoLExpr {cons("SampleExpr")}
+
+	desugarings
+		desugar-sample-expr
+
+	rules
+		desugar-sample-expr:
+			SampleExpr -> |[ "\"kommaFookomma\"" ]|
+}

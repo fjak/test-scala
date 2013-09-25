@@ -1,3 +1,0 @@
-package foo
-
-class Baz(i: Int)
